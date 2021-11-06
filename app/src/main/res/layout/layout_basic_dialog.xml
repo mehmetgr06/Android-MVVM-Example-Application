@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:textAlignment="center"
+            tools:text="Dialog Test"
+            android:textAppearance="@style/PrimaryMediumRegular"
+            android:textColor="@color/gray" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog"
+            style="@style/LargePrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:backgroundTint="@color/primary_green"
+            android:text="@string/done"
+            android:textAppearance="@style/PrimarySmallSemiBold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleSmallBold">
+        <item name="android:fontFamily">@font/barlow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_26ssp</item>
+
+    </style>
+
+    <style name="PrimaryXxLargeBold">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+
+    </style>
+
+    <style name="PrimaryXxLargeSemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+
+    </style>
+
+    <style name="PrimaryXxLargeMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="PrimaryXxLargeRegular">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="PrimaryXLargeBold">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryXLargeSemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryXLargeMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryXLargeRegular">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="PrimaryLargeBold">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryLargeSemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+
+    <style name="PrimaryLargeMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="PrimaryLargeRegularRight">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PrimaryLargeRegularCenter">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PrimaryLargeRegularLeft">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PrimaryMediumBoldRight">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumBoldCenter">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="PrimaryMediumBoldLeft">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumSemiBoldRight">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumSemiBoldCenter">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumSemiBoldLeft">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumRegularLeft2">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryMediumRegularRight2">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+
+    <style name="PrimaryMediumRegular">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimarySmallBoldRight">
+        <item name="android:gravity">end</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="PrimarySmallBoldCenter">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PrimarySmallBoldLeft">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PrimarySmallSemiBold">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimarySmallMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimarySmallMediumRegular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimarySmallRegular">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryXSmallBold">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="PrimaryXSmallRegular">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="PrimaryXXSmallMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PrimaryXSmallMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="PrimaryXSmallSemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="PrimaryXSmallSemiBoldLeft">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="PrimarySelected">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="PrimaryUnselected">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="SubtitleTextAppearance">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+</resources>

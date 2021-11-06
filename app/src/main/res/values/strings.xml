@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PhoneHelper</string>
+
+    <string name="done">Tamam</string>
+    <string name="generic_error">Bir hata oluştu. Lütfen daha sonra tekrar dene.</string>
+    <string name="text_no_internet">İnternet bağlantın yok.</string>
+    <string name="timeout_message">Beklenilen sürede cevap alamadık, lütfen sayfayı yenileyin.</string>
+
+
+</resources>

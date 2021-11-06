@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_green">#00C68E</color>
+    <color name="primary_light_black">#4A4A4A</color>
+    <color name="dim_gray">#5c5c5e</color>
+    <color name="white">#ffffff</color>
+    <color name="white_30">#4dffffff</color>
+    <color name="white_85">#d9ffffff</color>
+    <color name="primary_green_2">#46d688</color>
+    <color name="primary_green_5">#0D46d688</color>
+    <color name="silver">#727273</color>
+    <color name="dark_liver">#464647</color>
+    <color name="dark_gray">#2e2e30</color>
+    <color name="gray">#8b8b8c</color>
+    <color name="light_green">#62dc9a</color>
+    <color name="dark_green">#3fc07a</color>
+    <color name="dark_red">#9f1b1f</color>
+    <color name="red">#de1c22</color>
+    <color name="quick_silver">#a2a2a3</color>
+    <color name="cultured">#f4f4f4</color>
+    <color name="platinium">#e7e7e7</color>
+    <color name="light_gray">#d0d0d1</color>
+    <color name="gray_x11">#b9b9b9</color>
+    <color name="black">#18181a</color>
+    <color name="quiet">#01a054</color>
+    <color name="purple">#844699</color>
+    <color name="yellow_light">#ffe401</color>
+    <color name="navy_blue">#2f3099</color>
+    <color name="turquoise">#169dd8</color>
+    <color name="turquoise_light">#169dd8</color>
+    <color name="border_gray">#e4e4e4</color>
+</resources>

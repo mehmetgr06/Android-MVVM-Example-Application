@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- TODO: Deneme, KALDIRILACAK -->
+    <data>
+        <variable
+            name="item"
+            type="String" />
+    </data>
+
+    <data>
+        <variable
+            name="clickListener"
+            type="String" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:textAlignment="center"
+            android:textAppearance="@style/PrimaryMediumMedium"
+            tools:text="Dialog Title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textAlignment="center"
+            android:textAppearance="@style/PrimarySmallRegular"
+            android:textColor="@color/gray"
+            tools:text="Dialog Dummy Text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_okay"
+            style="@style/LargePrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:backgroundTint="@color/primary_green"
+            android:textAppearance="@style/PrimarySmallSemiBold"
+            android:textColor="@color/white"
+            tools:text="Okay" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/LargePrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/white"
+            android:textAppearance="@style/PrimarySmallSemiBold"
+            android:textColor="@color/primary_light_black"
+            app:strokeColor="@color/quick_silver"
+            app:strokeWidth="@dimen/_1sdp"
+            tools:text="Back" />
+
+    </LinearLayout>
+</layout>

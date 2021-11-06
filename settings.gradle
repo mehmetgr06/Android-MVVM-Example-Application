@@ -1,0 +1,3 @@
+rootProject.name = "PhoneHelper"
+include ':app'
+include ':app:buildsrc'
