@@ -5,6 +5,12 @@
     <string name="generic_error">Bir hata oluştu. Lütfen daha sonra tekrar dene.</string>
     <string name="text_no_internet">İnternet bağlantın yok.</string>
     <string name="timeout_message">Beklenilen sürede cevap alamadık, lütfen sayfayı yenileyin.</string>
+    <string name="title_today_usage">Bugünkü Kullanım Süreniz</string>
+    <string name="title_daily_average_usage">Günlük Ortalama Kullanım:</string>
+    <string name="title_weekly_average_usage">Haftalık Ortalama Kullanım:</string>
+    <string name="title_weekdays_average_usage">Hafta içi Ortalama Kullanım:</string>
+    <string name="title_weekend_average_usage">Hafta sonu Ortalama Kullanım:</string>
+    <string name="title_opened_lock">Bugünkü Kilit Açma:</string>
 
 
 </resources>

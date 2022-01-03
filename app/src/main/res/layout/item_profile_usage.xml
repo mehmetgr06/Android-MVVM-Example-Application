@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/title_today_usage"
+            android:textAlignment="center"
+            android:textAppearance="@style/PrimaryMediumRegular"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_usage_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textAlignment="center"
+            android:textAppearance="@style/PrimarySmallRegular"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_usage"
+            tools:text="8 hour 35 minute" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_daily_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="@string/title_daily_average_usage"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_usage_today" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_daily_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_daily_average"
+            app:layout_constraintStart_toEndOf="@id/tv_title_daily_average"
+            app:layout_constraintTop_toTopOf="@id/tv_title_daily_average"
+            tools:text="9m" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_weekly_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/title_weekly_average_usage"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/tv_title_daily_average"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_daily_average" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_weekly_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_weekly_average"
+            app:layout_constraintStart_toEndOf="@id/tv_title_weekly_average"
+            app:layout_constraintTop_toTopOf="@id/tv_title_weekly_average"
+            tools:text="16h 42m" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_weekday_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/title_weekdays_average_usage"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/tv_title_daily_average"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_weekly_average" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_weekday_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_weekday_average"
+            app:layout_constraintStart_toEndOf="@id/tv_title_weekday_average"
+            app:layout_constraintTop_toTopOf="@id/tv_title_weekday_average"
+            tools:text="12h 36m" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_weekend_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/title_weekend_average_usage"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/tv_title_daily_average"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_weekday_average" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_weekend_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_weekend_average"
+            app:layout_constraintStart_toEndOf="@id/tv_title_weekend_average"
+            app:layout_constraintTop_toTopOf="@id/tv_title_weekend_average"
+            tools:text="6h 24m" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/platinium"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_weekend_average" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_opened_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/title_opened_lock"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/tv_title_daily_average"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_opened_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_opened_lock"
+            app:layout_constraintStart_toEndOf="@id/tv_title_opened_lock"
+            app:layout_constraintTop_toTopOf="@id/tv_title_opened_lock"
+            tools:text="5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
