@@ -8,6 +8,7 @@ buildscript {
         classpath("com.android.tools.build:gradle:4.2.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN_VERSION}")
         classpath("org.jacoco:org.jacoco.core:0.8.7")
+        classpath(Dependencies.Hilt.PLUGIN)
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
 

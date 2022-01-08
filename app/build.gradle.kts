@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
+    kotlin("android")
     id("kotlin-android")
+    id("dagger.hilt.android.plugin")
     kotlin("kapt")
 }
 
@@ -61,12 +63,9 @@ dependencies {
     implementation(Dependencies.Network.OKHTTP)
 
     implementation(Dependencies.Hilt.CORE)
-    implementation(Dependencies.Hilt.COMPILER)
-    implementation(Dependencies.Hilt.PLUGIN)
+    kapt(Dependencies.Hilt.COMPILER)
 
     implementation(Dependencies.Coroutines.CORE)
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")//flow importu için deneme
-
 
     implementation(Dependencies.UILibs.GLIDE)
     implementation(Dependencies.UILibs.GLIDE_PROCESSOR)
