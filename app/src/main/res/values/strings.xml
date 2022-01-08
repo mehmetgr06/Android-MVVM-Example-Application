@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">PhoneHelper</string>
 
+    <!-- Common -->
     <string name="done">Tamam</string>
     <string name="generic_error">Bir hata oluştu. Lütfen daha sonra tekrar dene.</string>
     <string name="text_no_internet">İnternet bağlantın yok.</string>
     <string name="timeout_message">Beklenilen sürede cevap alamadık, lütfen sayfayı yenileyin.</string>
     <string name="title_today_usage">Bugünkü Kullanım Süreniz</string>
+    <string name="menu_main_title">Ana Sayfa</string>
+    <string name="menu_reports_title">Raporlar</string>
+    <string name="menu_profile_title">Profile</string>
+
+    <!-- Profile -->
     <string name="title_daily_average_usage">Günlük Ortalama Kullanım:</string>
     <string name="title_weekly_average_usage">Haftalık Ortalama Kullanım:</string>
     <string name="title_weekdays_average_usage">Hafta içi Ortalama Kullanım:</string>
