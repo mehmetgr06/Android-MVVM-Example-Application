@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_32sdp">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/text_input_username"
+            android:textAppearance="@style/PrimaryXSmallMedium"
+            app:layout_constraintBottom_toBottomOf="@id/img_close"
+            app:layout_constraintStart_toStartOf="@id/input_username"
+            app:layout_constraintTop_toTopOf="@id/img_close" />
+
+        <cz.ackee.ui.textfield.TextInputLayout
+            android:id="@+id/input_username"
+            style="@style/AppTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="@string/title_username"
+            app:layout_constraintTop_toBottomOf="@id/img_close">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_username"
+                style="@style/AppEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </cz.ackee.ui.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            style="@style/LargePrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/primary_green"
+            android:text="@string/done"
+            android:textAppearance="@style/PrimarySmallSemiBold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/input_username" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

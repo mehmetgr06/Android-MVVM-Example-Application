@@ -9,4 +9,8 @@ import javax.inject.Singleton
 @Singleton
 open class PreferencesHelper(context: Context) {
 
+    companion object {
+        private const val PREF_PACKAGE_NAME = "com.marsathletic.android.macfit"
+    }
+
 }

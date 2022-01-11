@@ -54,6 +54,8 @@ object Dependencies {
         const val GLIDE_PROCESSOR = "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
         const val INTUIT_SDP = "com.intuit.ssp:ssp-android:1.0.6"
         const val INTUIT_SSP = "com.intuit.sdp:sdp-android:1.0.6"
+        const val CONCAT_ADAPTER = "androidx.recyclerview:recyclerview:1.2.1"
+        const val TEXT_INPUT_LAYOUT = "cz.ackee.ui:TextInputLayout:1.1.0"
     }
 
     object Test {

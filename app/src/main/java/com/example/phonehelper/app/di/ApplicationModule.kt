@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Configuration
 import android.provider.Settings
+import androidx.recyclerview.widget.ConcatAdapter
 import com.example.phonehelper.app.base.*
 import dagger.Module
 import dagger.Provides
@@ -36,8 +37,8 @@ class ApplicationModule {
     @Singleton
     fun provideExposer() = Exposer()
 
-    //@Provides
-    //fun provideConcatAdapter() = ConcatAdapter()
+    @Provides
+    fun provideConcatAdapter() = ConcatAdapter()
 
     @Provides
     @Singleton
@@ -46,6 +47,7 @@ class ApplicationModule {
     @SuppressLint("HardwareIds")
     @Provides
     @Singleton
-    fun provideAndroidId(@ApplicationContext context: Context) = Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
+    fun provideAndroidId(@ApplicationContext context: Context) =
+        Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
 
 }

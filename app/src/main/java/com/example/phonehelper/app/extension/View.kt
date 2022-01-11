@@ -15,6 +15,8 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 
+fun <T : View> T.click(block: (T) -> Unit) = setOnClickListener { block(it as T) }
+
 /**
  * Show the view  (visibility = View.VISIBLE)
  */
