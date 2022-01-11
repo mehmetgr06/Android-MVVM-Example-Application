@@ -9,7 +9,7 @@
 
         <variable
             name="clickListener"
-            type="com.example.phonehelper.app.base.ProfileItemClickListener" />
+            type="com.mgstudio.phonehelper.app.base.ProfileItemClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

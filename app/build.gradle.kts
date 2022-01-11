@@ -11,7 +11,7 @@ android {
     buildToolsVersion("30.0.3")
 
     defaultConfig {
-        applicationId = "com.example.phonehelper"
+        applicationId = "com.mgstudio.phonehelper"
         minSdkVersion(24)
         targetSdkVersion(30)
         versionCode(1)
