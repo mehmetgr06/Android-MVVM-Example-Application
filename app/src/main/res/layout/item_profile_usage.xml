@@ -2,6 +2,13 @@
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="item"
+            type="String" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -10,7 +17,7 @@
             android:id="@+id/tv_title_usage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:text="@string/title_today_usage"
             android:textAlignment="center"
             android:textAppearance="@style/PrimaryMediumRegular"
@@ -22,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_4sdp"
             android:textAlignment="center"
+            android:text="@{item}"
             android:textAppearance="@style/PrimarySmallRegular"
             app:layout_constraintTop_toBottomOf="@id/tv_title_usage"
             tools:text="8 hour 35 minute" />

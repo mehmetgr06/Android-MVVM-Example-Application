@@ -11,3 +11,8 @@ object Exceptions {
     const val UNKNOWN_HOST_EXCEPTION = "UnknownHostException"
     const val TIME_OUT_EXCEPTION = "TimeOutException"
 }
+
+object TimeStamps {
+    const val START_HOUR_OF_DAY = 0
+    const val START_MINUTE_OF_DAY = 0
+}

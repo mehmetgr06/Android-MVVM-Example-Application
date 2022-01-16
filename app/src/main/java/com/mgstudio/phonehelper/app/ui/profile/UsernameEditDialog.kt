@@ -2,10 +2,10 @@ package com.mgstudio.phonehelper.app.ui.profile
 
 import android.content.Context
 import android.view.LayoutInflater
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.mgstudio.phonehelper.app.base.BaseDialog
 import com.mgstudio.phonehelper.app.extension.click
 import com.mgstudio.phonehelper.databinding.LayoutEditDialogBinding
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class UsernameEditDialog(context: Context, clickListener: (String) -> Unit) : BaseDialog() {
 
@@ -23,6 +23,10 @@ class UsernameEditDialog(context: Context, clickListener: (String) -> Unit) : Ba
                 dialog?.dismiss()
             }
             btnDone.click {
+                val userName = edtUsername.text.toString()
+                if (userName.isNotBlank()) {
+                    dialog?.dismiss()
+                }
                 clickListener.invoke(edtUsername.text.toString())
             }
         }

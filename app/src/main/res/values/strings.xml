@@ -10,6 +10,8 @@
     <string name="menu_main_title">Ana Sayfa</string>
     <string name="menu_reports_title">Raporlar</string>
     <string name="menu_profile_title">Profil</string>
+    <string name="title_grant_permission">İzin Ver</string>
+    <string name="title_cancel">Vazgeç</string>
 
     <!-- Profile -->
     <string name="title_daily_average_usage">Günlük Ortalama Kullanım:</string>
@@ -19,6 +21,11 @@
     <string name="title_opened_lock">Bugünkü Kilit Açma:</string>
     <string name="title_username">Kullanıcı Adı</string>
     <string name="text_input_username">Kullanıcı Adını Giriniz:</string>
+    <string name="text_warning_username_empty">Kullanıcı adı boş bırakılamaz!</string>
+    <string name="title_information">Bilgi</string>
+    <string name="text_usage_permission_warning">Kullanım erişim iznini açmadığın için PhoneHelper düzgün çalışmayacak ve istatistiklerini gösteremeyecek. İstediğin zaman kullanım ayarlarından izin verebilirsin.</string>
+    <string name="text_usage_permission">PhoneHelper, istatistiklerini gösterebilmek için kullanım erişim iznine ihtiyaç duyar \n Ayarlardan PhoneHelper erişim iznini açmalısın</string>
+
 
 
 </resources>

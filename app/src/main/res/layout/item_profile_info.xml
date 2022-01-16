@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -42,7 +42,8 @@
             app:layout_constraintBottom_toBottomOf="@id/img_profile"
             app:layout_constraintEnd_toStartOf="@id/img_edit"
             app:layout_constraintStart_toEndOf="@+id/img_profile"
-            app:layout_constraintTop_toTopOf="@id/img_profile" />
+            app:layout_constraintTop_toTopOf="@id/img_profile"
+            tools:text="Mehmet Gür" />
 
         <ImageView
             android:id="@+id/img_edit"
@@ -56,5 +57,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/img_profile" />
 
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/platinium"
+            app:layout_constraintTop_toBottomOf="@id/img_profile"
+            app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

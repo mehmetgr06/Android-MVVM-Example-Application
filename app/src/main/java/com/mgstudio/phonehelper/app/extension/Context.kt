@@ -6,10 +6,16 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 import android.util.DisplayMetrics
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.mgstudio.phonehelper.app.base.BasicDialog
+import com.mgstudio.phonehelper.app.base.DoubleButtonDialog
 
 fun Context.getColorCompat(color: Int) = ContextCompat.getColor(this, color)
+
+fun Context.showToast(text: CharSequence, duration: Int = Toast.LENGTH_SHORT) =
+    Toast.makeText(this, text, duration).show()
 
 fun Activity.heightPixels(): Int {
     val outMetrics = DisplayMetrics()
@@ -61,3 +67,30 @@ fun Fragment.hideSoftKeyboard() {
     activity?.hideSoftKeyboard()
 }
 
+fun Context.showDialog(
+    title: String,
+    question: String,
+    firstButtonText: String,
+    secondButtonText: String,
+    backButtonVisibility: Boolean = true,
+    topButtonBgColor: Int? = null,
+    bottomButtonClick: (() -> Unit?)? = null,
+    topButtonClick: () -> Unit,
+) {
+    DoubleButtonDialog(
+        this,
+        title,
+        question,
+        firstButtonText,
+        secondButtonText, backButtonVisibility, topButtonBgColor, bottomButtonClick, topButtonClick
+    ).create().show()
+}
+
+fun Context.showBasicDialog(
+    errorMessage: String
+) {
+    BasicDialog(
+        this,
+        errorMessage
+    ).create().show()
+}
