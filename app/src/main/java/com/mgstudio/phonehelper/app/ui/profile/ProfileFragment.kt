@@ -20,6 +20,7 @@ import com.mgstudio.phonehelper.app.extension.showDialog
 import com.mgstudio.phonehelper.app.extension.showToast
 import com.mgstudio.phonehelper.app.model.base.TimeStamps.START_HOUR_OF_DAY
 import com.mgstudio.phonehelper.app.model.base.TimeStamps.START_MINUTE_OF_DAY
+import com.mgstudio.phonehelper.app.model.profile.ProfileUsageStat
 import com.mgstudio.phonehelper.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
@@ -34,9 +35,11 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding, ProfileViewModel>()
     private val profileInfoAdapter = MagicRecyclerAdapter<ProfileItemClickListener, String>(
         R.layout.item_profile_info, this
     )
-    private val profileUsageAdapter = MagicRecyclerAdapter<Any, String>(
+    private val profileUsageAdapter = MagicRecyclerAdapter<Any, ProfileUsageStat>(
         R.layout.item_profile_usage
     )
+
+    private val usageStatData: ProfileUsageStat? = null
 
     private val profileAdapter = ConcatAdapter(
         profileInfoAdapter,
@@ -99,7 +102,9 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding, ProfileViewModel>()
             minutes += minute
             hours += hour
         }
-        profileUsageAdapter.setData("YOU SPENT $hours hours $minutes mins")
+        usageStatData?.currentDayUsageHour = hours.toInt()
+        usageStatData?.currentDayUsageMinute = minutes.toInt()
+        profileUsageAdapter.setData(ProfileUsageStat(hours.toInt(), minutes.toInt()))
     }
 
 

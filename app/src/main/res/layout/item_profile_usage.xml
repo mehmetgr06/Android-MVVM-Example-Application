@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="String" />
+            type="com.mgstudio.phonehelper.app.model.profile.ProfileUsageStat" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_4sdp"
             android:textAlignment="center"
-            android:text="@{item}"
+            android:text="@{String.format(@string/title_usage_hour_minute, item.currentDayUsageHour, item.currentDayUsageMinute)}"
             android:textAppearance="@style/PrimarySmallRegular"
             app:layout_constraintTop_toBottomOf="@id/tv_title_usage"
             tools:text="8 hour 35 minute" />
