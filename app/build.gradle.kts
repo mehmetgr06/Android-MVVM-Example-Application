@@ -11,7 +11,7 @@ android {
     buildToolsVersion("30.0.3")
 
     defaultConfig {
-        applicationId = "com.example.phonehelper"
+        applicationId = "com.mgstudio.phonehelper"
         minSdkVersion(24)
         targetSdkVersion(30)
         versionCode(1)
@@ -71,6 +71,12 @@ dependencies {
     implementation(Dependencies.UILibs.GLIDE_PROCESSOR)
     implementation(Dependencies.UILibs.INTUIT_SDP)
     implementation(Dependencies.UILibs.INTUIT_SSP)
+    implementation(Dependencies.UILibs.CONCAT_ADAPTER)
+    implementation(Dependencies.UILibs.TEXT_INPUT_LAYOUT)
+
+    implementation("androidx.appcompat:appcompat:1.3.1")
+    implementation("com.google.android.material:material:1.3.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
 
     testImplementation(Dependencies.Test.JUNIT)
     androidTestImplementation(Dependencies.Test.EXT_JUNIT)
