@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.mgstudio.phonehelper.app.model.feed.FeedResponse" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_world"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/ic_world_virus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cases_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@{item.country}"
+            android:textAppearance="@style/PrimarySmallBoldCenter"
+            android:textColor="@color/primary_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_world"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="USA" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_cases_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:includeFontPadding="false"
+            android:text="@string/title_cases"
+            android:textAppearance="@style/PrimaryXSmallRegular"
+            app:layout_constraintEnd_toEndOf="@id/tv_country"
+            app:layout_constraintStart_toStartOf="@id/tv_country"
+            app:layout_constraintTop_toBottomOf="@id/tv_country" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_active_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="@{String.format(@string/text_active_cases, item.cases.active)}"
+            android:textAppearance="@style/PrimaryXSmallSemiBold"
+            app:layout_constraintStart_toEndOf="@id/img_world"
+            app:layout_constraintTop_toBottomOf="@id/tv_cases_title"
+            tools:text="Aktif Vakalar: 1234578" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_critical_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@{String.format(@string/text_critical_cases,item.cases.critical)}"
+            android:textAppearance="@style/PrimaryXSmallSemiBold"
+            app:layout_constraintStart_toStartOf="@id/tv_active_cases"
+            app:layout_constraintTop_toBottomOf="@id/tv_active_cases"
+            tools:text="Kritik Vakalar: 1278" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_total_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@{String.format(@string/text_total_cases,item.cases.critical)}"
+            android:textAppearance="@style/PrimaryXSmallSemiBold"
+            app:layout_constraintStart_toStartOf="@id/tv_active_cases"
+            app:layout_constraintTop_toBottomOf="@id/tv_critical_cases"
+            tools:text="Kritik Vakalar: 1278" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@color/platinium"
+            app:layout_constraintTop_toBottomOf="@id/tv_total_cases" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

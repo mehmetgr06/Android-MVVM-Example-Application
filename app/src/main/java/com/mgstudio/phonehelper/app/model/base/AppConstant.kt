@@ -16,3 +16,7 @@ object TimeStamps {
     const val START_HOUR_OF_DAY = 0
     const val START_MINUTE_OF_DAY = 0
 }
+
+object DateFormats{
+    const val SERVICE_DATE = "yyyy-MM-dd'T'HH:mm:ss"
+}

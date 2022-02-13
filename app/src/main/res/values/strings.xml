@@ -26,6 +26,10 @@
     <string name="text_usage_permission_warning">Kullanım erişim iznini açmadığın için PhoneHelper düzgün çalışmayacak ve istatistiklerini gösteremeyecek. İstediğin zaman kullanım ayarlarından izin verebilirsin.</string>
     <string name="text_usage_permission">PhoneHelper, istatistiklerini gösterebilmek için kullanım erişim iznine ihtiyaç duyar \n Ayarlardan PhoneHelper erişim iznini açmalısın</string>
     <string name="title_usage_hour_minute">%1d saat %2d dakika</string>
+    <string name="title_cases">Vakalar</string>
+    <string name="text_active_cases">Aktif: %1d</string>
+    <string name="text_critical_cases">Kritik: %1d</string>
+    <string name="text_total_cases">Toplam: %1d</string>
 
 
 </resources>

@@ -26,6 +26,15 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
+
+    flavorDimensions("version")
+    productFlavors {
+        create("prod") {
+            versionName = "0.1"
+            buildConfigField("String","BASE_URL","\"https://covid-193.p.rapidapi.com/\"")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
