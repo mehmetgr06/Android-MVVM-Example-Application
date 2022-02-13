@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mgstudio.phonehelper.app.model.base.Response
 import com.google.gson.Gson
+import com.mgstudio.phonehelper.app.model.base.ResponseService
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
@@ -19,9 +20,9 @@ abstract class BaseViewModel : ViewModel() {
     val showErrorLiveData: LiveData<String> = MutableLiveData()
 
     fun <T> launchViewModelScope(
-        block: Flow<Response<T>>,
+        block: Flow<ResponseService<T>>,
         isLoading: Boolean = true,
-        collectData: ((Response<T>) -> Unit)
+        collectData: ((ResponseService<T>) -> Unit)
     ) {
         viewModelScope.launch {
             block.onStart {
@@ -29,11 +30,13 @@ abstract class BaseViewModel : ViewModel() {
             }.catch { exception ->
                 parseExceptionMessage(exception)
             }.collect { response ->
-                if(response.error.not()) {
+                collectData(response)
+                _showProgressBarLiveData.value = false
+                /*if(response.error.not()) {
                     collectData(response)
                 } else {
                     _showErrorLiveData.value = response.message
-                }
+                }*/
             }
         }
     }
