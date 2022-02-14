@@ -88,6 +88,18 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.0")
 
     testImplementation(Dependencies.Test.JUNIT)
+    testImplementation(Dependencies.Test.MOCKITO)
+    testImplementation(Dependencies.Test.MOCKITO_INLINE)
+    testImplementation(Dependencies.Test.COROUTINE_TEST)
+    testImplementation(Dependencies.Test.COROUTINE_TEST_ANDROID)
+    testImplementation(Dependencies.Test.ANDROIDX_CORE_TEST)
+    testImplementation(Dependencies.Test.TURBINE)
+    testImplementation(Dependencies.Test.ROBOLECTRIC)
+    testImplementation(Dependencies.Test.ANDROIDX_TEST)
+
+    kaptAndroidTest(Dependencies.Test.HILT_COMPILER_TEST)
+
+    androidTestImplementation(Dependencies.Test.HILT_ANDROID_TEST)
     androidTestImplementation(Dependencies.Test.EXT_JUNIT)
     androidTestImplementation(Dependencies.Test.ESPRESSO_CORE)
 }

@@ -59,8 +59,18 @@ object Dependencies {
     }
 
     object Test {
-        const val JUNIT="junit:junit:4.13.2"
+        const val MOCKITO = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
+        const val MOCKITO_INLINE = "org.mockito:mockito-inline:3.11.2"
+        const val COROUTINE_TEST_ANDROID = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
+        const val COROUTINE_TEST = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.0"
+        const val ANDROIDX_CORE_TEST = "androidx.arch.core:core-testing:2.1.0"
+        const val ANDROIDX_TEST = "androidx.test:core:1.0.0"
+        const val TURBINE = "app.cash.turbine:turbine:0.5.1"
+        const val ROBOLECTRIC = "org.robolectric:robolectric:4.6-alpha-1"
+        const val HILT_ANDROID_TEST = "com.google.dagger:hilt-android-testing:2.37"
+        const val HILT_COMPILER_TEST = "com.google.dagger:hilt-compiler:2.37"
         const val EXT_JUNIT="androidx.test.ext:junit:1.1.3"
+        const val JUNIT="junit:junit:4.13.2"
         const val ESPRESSO_CORE = "androidx.test.espresso:espresso-core:3.4.0"
     }
 
