@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhoneHelper</string>
+    <string name="done">Done</string>
+    <string name="generic_error">An error occurred. Please try later.</string>
+    <string name="text_no_internet">No internet connection.</string>
+    <string name="timeout_message">We couldn\'t get response in expected time. Please refresh the page.</string>
+    <string name="title_today_usage">Today Usage Time</string>
+    <string name="menu_main_title">Feed</string>
+    <string name="menu_reports_title">Reports</string>
+    <string name="menu_profile_title">Profile</string>
+    <string name="title_grant_permission">Allow</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_daily_average_usage">Daily Avarage Usage</string>
+    <string name="title_weekly_average_usage">Weekly Avarage Usage</string>
+    <string name="title_weekdays_average_usage">Weekdays Avarage Usage</string>
+    <string name="title_weekend_average_usage">Weekend Avarage Usage</string>
+    <string name="title_opened_lock">Unlocks in Today</string>
+    <string name="title_username">Username</string>
+    <string name="text_input_username">Enter Username</string>
+    <string name="text_warning_username_empty">Username can not be blank</string>
+    <string name="title_information">Info</string>
+    <string name="text_usage_permission_warning">PhoneHelper wont work properly and wont be able to show statistics because you did not turn on usage access permission. You can give permission in the usage settings whenever you want.</string>
+    <string name="text_usage_permission">PhoneHelper needs usage access permission to show statistics  You have to enable PhoneHelper access permission from settings.</string>
+    <string name="title_usage_hour_minute">%1d hours and %2s minutes</string>
+    <string name="title_cases">Cases</string>
+    <string name="text_active_cases">Current: %1d</string>
+    <string name="text_critical_cases">Critical: %1d</string>
+    <string name="text_total_cases">Total: %1d</string>
+</resources>

@@ -17,4 +17,10 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.mgstudio.phonehelper.app.ui.reports.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" />
+
 </navigation>
