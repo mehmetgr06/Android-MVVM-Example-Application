@@ -16,6 +16,10 @@ class FeedViewModel @Inject constructor(private val feedRepository: FeedReposito
     val historyLiveData: LiveData<MutableList<FeedResponse>> = _historyLiveData
 
     init {
+       getFeedHistory()
+    }
+
+    fun getFeedHistory() {
         launchViewModelScope(feedRepository.getHistory()) { response ->
             response.response?.let { historyList ->
                 _historyLiveData.value = historyList
