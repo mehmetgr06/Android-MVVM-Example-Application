@@ -1,5 +1,5 @@
 # Android-MVVM-Example-Application
-This project is written with Kotlin. MVVM and Clean architecture used.
+This project is written with Kotlin. MVVM architecture is used.
 
 This is an example application using some public apis to fetch datas. The are 3 main tab. Navigation is provided with Navigation Component Library.
 Request is sent in feed page and response datas are shown with RecyclerView. Flow of Coroutines is used with web services.
